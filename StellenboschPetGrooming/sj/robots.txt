@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://azande12.github.io/Web-part2/StellenboschPetGrooming/sitemap.xml
