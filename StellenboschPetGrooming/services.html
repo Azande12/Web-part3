@@ -1,8 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Services - Stellenbosch Pet Grooming</title><link rel="stylesheet" href="css/style.css"></head>
-<body>
-<header><nav><div class="logo">🐾 Stellenbosch Pet Grooming</div><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a></div></nav></header>
-<main><h1>Our Services</h1><div class="table-wrapper"><table><tr><th>Service</th><th>Small Dogs</th><th>Large Dogs</th><th>Cats</th></tr><tr><td>Bath & Blow Dry</td><td>R250</td><td>R350</td><td>R300</td></tr><tr><td>Full Groom + Haircut</td><td>R400</td><td>R550</td><td>R450</td></tr><tr><td>Nail Trimming</td><td>R80</td><td>R80</td><td>R80</td></tr><tr><td>Ear Cleaning</td><td>R60</td><td>R60</td><td>R60</td></tr></table></div><div class="services-grid" style="margin-top:2rem;"><div class="card"><h2>Monthly Plan - 10% off</h2><p>2 grooms per month + free nails.</p></div><div class="card"><h2>Puppy Intro</h2><p>Gentle first groom.</p></div><div class="card"><h2>Spa Package R500</h2><p>Bath, cut, nails, ear + facial.</p></div></div></main>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services & Prices | Dog and Cat Grooming Stellenbosch</title>
+<meta name="description" content="View our affordable dog and cat grooming prices in Stellenbosch. Basic wash, full spa, puppy groom.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head><body>
+<header><nav><div class="logo">🐾 Stellenbosch Pet Grooming</div><div class="nav-links">
+<a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a>
+</div></nav></header>
+<main>
+<h1>Our Services</h1>
+<input type="text" id="service-search" placeholder="Search services..." style="padding:0.8rem; width:100%; max-width:400px; border:1px solid #ddd; border-radius:8px; margin-bottom:1rem;">
+<div id="dynamic-services" class="services-grid"></div>
+<h2 style="margin-top:2rem;">Price Table</h2>
+<div class="table-wrapper"><table><tr><th>Service</th><th>Price</th><th>Duration</th></tr><tr><td>Basic Grooming</td><td>R250</td><td>1hr</td></tr><tr><td>Full Spa</td><td>R450</td><td>2hr</td></tr></table></div>
+</main>
+<div id="booking-modal"><div class="modal-content"><span onclick="closeModal()" style="float:right;cursor:pointer;font-size:24px;">&times;</span><h3>Quick Enquiry</h3><input id="modal-service" disabled style="width:100%;padding:0.5rem;margin:0.5rem 0;"><a href="enquiry.html" class="btn">Go to Full Form</a></div></div>
 <footer><p>&copy; 2026 Stellenbosch Pet Grooming</p></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="js/main.js"></script>
 </body></html>
