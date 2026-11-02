@@ -1,10 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Enquiry - Stellenbosch Pet Grooming</title><link rel="stylesheet" href="css/style.css"></head>
-<body>
-<header><nav><div class="logo">🐾 Stellenbosch Pet Grooming</div><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a></div></nav></header>
-<main><h1>Book an Appointment</h1>
-    <div class="hero"><form class="enquiry-form"><div class="form-group"><label>Name:</label><input type="text" required placeholder="John Doe"></div><div class="form-row"><div class="form-group"><label>Email:</label><input type="email" required></div><div class="form-group"><label>Phone:</label><input type="tel" required></div></div><div class="form-row"><div class="form-group"><label>Pet Type:</label><select><option>Dog - Small</option><option>Dog - Large</option><option>Cat</option></select></div><div class="form-group"><label>Date:</label><input type="date" required></div></div><div class="form-group"><label>Message:</label><textarea rows="4"></textarea></div><button type="submit" class="btn">Submit Enquiry</button></form>
-        <div class="card"><h2>Why Us?</h2><p>✅ 5+ years certified</p><p>✅ Calm cage-free</p><p>✅ Free health check</p><img src="https://images.unsplash.com/photo-1558788353-6fc6f73e2831?w=600" srcset="https://images.unsplash.com/photo-1558788353-6fc6f73e2831?w=400 480w, https://images.unsplash.com/photo-1558788353-6fc6f73e2831?w=600 800w" sizes="(max-width: 768px) 100vw, 50vw" alt="Groomer"></div></div></main>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Grooming Appointment | Enquiry Form Stellenbosch</title>
+<meta name="description" content="Enquire about dog and cat grooming services, volunteering, or sponsorship in Stellenbosch.">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<header><nav><div class="logo">🐾 Stellenbosch Pet Grooming</div><div class="nav-links">
+<a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="enquiry.html">Enquiry</a><a href="contact.html">Contact</a>
+</div></nav></header>
+<main>
+<h1>Enquiry - Book a Service</h1>
+<div id="form-error"></div><div id="form-success"></div>
+<form id="enquiryForm" class="enquiry-form" novalidate>
+<div class="form-row"><div class="form-group"><label>Name</label><input id="enq-name" type="text" required></div><div class="form-group"><label>Email</label><input id="enq-email" type="email" required></div></div>
+<div class="form-row"><div class="form-group"><label>Phone (10 digits)</label><input id="enq-phone" type="tel" required></div><div class="form-group"><label>Service</label><select id="enq-service"><option>Basic Grooming</option><option>Full Spa</option><option>Cat Grooming</option></select></div></div>
+<div class="form-group"><label>Message</label><textarea id="enq-message" rows="4"></textarea></div>
+<button type="submit" class="btn">Submit Enquiry</button>
+</form>
+</main>
 <footer><p>&copy; 2026 Stellenbosch Pet Grooming</p></footer>
+<script src="js/main.js"></script>
 </body></html>
