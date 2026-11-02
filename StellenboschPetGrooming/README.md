@@ -1,26 +1,53 @@
-# WEDE5020 Part 2 - Stellenbosch Pet Grooming
-## CSS Implemented
-- External css/style.css linked to all pages
-- Base: reset, root variables, body defaults
-- Typography: font-family, rem, font-weight, line-height
-- Layout: display:flex for nav, display:grid for hero and services
-- Visual: color, background-color, border, box-shadow, border-radius
-- Interactive: :hover :focus :active on links and inputs
+# Stellenbosch Pet Grooming - Web Development Part 3
 
-## Responsive Design
-- Breakpoints: 1024px tablet, 768px mobile, 480px small
-- Desktop 3 cols, Tablet 2 cols, Mobile 1 col
-- Relative Units: rem, %, em
-- Responsive Images: srcset and sizes on all images
-- Table scrolls on mobile via overflow-x:auto
+**Student:** Azande  
+**Module:** Web Development - Part 3 (WEDE5020)  
+**Live Site:** https://azande12.github.io/Web-part2/StellenboschPetGrooming/
+**GitHub Repo:** https://github.com/Azande12/Web-part2
 
-## Changelog - Fixed from Part 1
-- Fixed nav consistency with logo div
-- Fixed removed br tags from form, used flex
-- Fixed added alt to images, viewport tag
-- Added table-wrapper for responsive table
-- Added focus states on form
-- Added media queries for responsiveness
+## Project Overview
+Professional dog and cat grooming service based at 8 Bird Street, Stellenbosch. This website allows customers to view services, search services, enquire, and contact us.
 
-## Screenshots
-Add desktop.png, tablet.png, mobile.png here
+## Part 3 Changelog - What was upgraded from Part 2
+
+### 1. JavaScript (js/main.js)
+- Dynamic services rendering from JS array
+- Search functionality (filter services)
+- Lightbox gallery (click to enlarge)
+- Accordion FAQ (open/close)
+- Booking modal popup
+- Leaflet map at 8 Bird Street, Stellenbosch (-33.9321, 18.8602)
+- Form validation: name 3+ chars, valid email regex, 10-digit phone, message 10+ chars
+- Cost estimate and availability shown on success
+- Active nav link highlighting
+
+### 2. SEO
+- Title tags optimized with keywords "Stellenbosch Pet Grooming", "Dog grooming Stellenbosch"
+- Meta description on all 5 pages
+- Alt text with keywords, srcset and sizes for responsive images
+- Semantic HTML: header, main, section, footer, table
+
+### 3. Other Part 3 Requirements
+- `robots.txt` created
+- `sitemap.xml` created with all 5 pages
+- CSS animations (fade-in, hover transform)
+- Table styled responsively
+
+## Folder Structure
+StellenboschPetGrooming/
+  index.html
+  about.html
+  services.html
+  enquiry.html
+  contact.html
+  css/style.css
+  js/main.js
+  robots.txt
+  sitemap.xml
+  README.md
+
+## How to Run
+Open index.html in browser or use Live Server in VS Code. Requires internet for Leaflet map and images.
+
+## References
+Unsplash images, Leaflet.js, OpenStreetMap
